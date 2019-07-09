@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod
+  labels:
+    app: ex-pod
+spec:
+  containers:
+  - name: ex-pod-container
+    image: clearlinux/stacks-dlrs-mkl:latest
+    command: ['/bin/bash', '-c', '--']
+    args: [ "while true; do sleep 30; done" ]
