@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: ex-pod-container
-    image: clearlinux/stacks-dlrs-mkl:latest
+    image: intelpython/intelpython3_full:latest
     command: ['/bin/bash', '-c', '--']
     args: [ "while true; do sleep 30; done" ]
